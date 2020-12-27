@@ -1,11 +1,11 @@
 import React from 'react';
-import Landing from './components/Landing';
+import Routes from './Routes';
 import './sass/main.scss';
 
 function App() {
   return (
     <div className="App">
-      <Landing />
+      <Routes />
     </div>
   );
 }

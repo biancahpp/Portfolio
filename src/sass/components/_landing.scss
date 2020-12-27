@@ -1,10 +1,4 @@
 .Landing{
-  // &__menu-icon{
-  //   display: inline-block;
-  //   position: absolute;
-  //   right: 3rem;
-  //   top: 3rem;
-  // }
   nav{
     width: 100vw;
     height: 10vh;
@@ -19,11 +13,18 @@
         transition: color 0.5s;
       }
     }
-
   }
   &__title{
     position: absolute;
     top: 20%;
     left: 10%;
+    h2{
+      display: flex;
+      align-items: center;
+      span{
+        padding-right: 2rem;
+      }
+    }
+    
   }
 }
