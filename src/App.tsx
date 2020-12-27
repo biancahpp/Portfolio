@@ -1,10 +1,11 @@
 import React from 'react';
+import Landing from './components/Landing';
 import './sass/main.scss';
 
 function App() {
   return (
     <div className="App">
-      Oi
+      <Landing />
     </div>
   );
 }

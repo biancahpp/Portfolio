@@ -1,0 +1,29 @@
+.Landing{
+  // &__menu-icon{
+  //   display: inline-block;
+  //   position: absolute;
+  //   right: 3rem;
+  //   top: 3rem;
+  // }
+  nav{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5rem;
+    a{
+      padding: 2rem;
+      &:hover{
+        color: $dark-pink;
+        transition: color 0.5s;
+      }
+    }
+
+  }
+  &__title{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+  }
+}

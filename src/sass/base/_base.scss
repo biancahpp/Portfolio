@@ -9,10 +9,23 @@
 
 html {
   font-size: 62.5%;
+  font-family: 'Quicksand', sans-serif;
+  color: $light-grey;
 }
 
 body {
   height: 100vh;
   background-image: linear-gradient($base-pink, $light-pink);
   background-repeat: no-repeat;
+}
+
+.Landing{
+  height: 90vh;
+  position: relative;
+}
+
+.btn:link,
+  :visited{
+    text-decoration: none;
+    color: $light-grey;
 }
