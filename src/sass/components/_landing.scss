@@ -27,4 +27,51 @@
     }
     
   }
+  &__projects{
+    height: 35rem;
+    width: 90rem;
+    // background-color: red;
+
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    .teste1{
+      display: flex;
+    }
+  }
+}
+
+.teste{
+  height: 50%;
+  width: 50%;
+  margin-top: 3rem;
+  padding: 2rem;
+  // background-color: blue;
+
+  img{
+    height: 100%;
+    width: 100%;
+
+    border-radius: 10px;
+    transition: all .2s;
+
+    &:hover{
+      box-shadow: 0 1rem 2rem rgba($shadow, .15);
+      transform: translateY(-2px);
+    }
+
+    &:active{
+      box-shadow: 0 .5rem 1rem rgba($shadow, .15);
+      transform: translateY(0);
+    }
+
+    }
+
+    
+
+  h3{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
 }

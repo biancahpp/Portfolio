@@ -11,4 +11,14 @@
     font-size: 5rem;
     font-style: italic;
   }
+
+  &__projects{
+    span{
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    a{
+      text-decoration: none;
+    }
+  }
 }
