@@ -1,0 +1,23 @@
+.Header{
+  nav{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5rem;
+    a{
+      padding: 2rem;
+      span{
+        display: none;
+      }
+      &:hover{
+        color: $dark-pink;
+        transition: color 0.5s;
+        span{
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

@@ -1,18 +1,15 @@
 import React from 'react';
 import Dog from '../components/Dog';
-import { FaCanadianMapleLeaf } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { FaCanadianMapleLeaf, FaSuitcase } from 'react-icons/fa';
 import Todo from '../images/Todo.png';
 import IpTracker from '../images/IPtracker.jpg';
+import Header from '../components/Header';
+import { Link } from 'react-router-dom';
 
 export default function Landing() {
   return (
     <div className="Landing">
-      <nav>
-        <Link to="/about" className="btn btn-about">About me</Link>
-        <Link to="/portfolio" className="btn btn-portfolio">Portfolio</Link>
-        <Link to="/contact" className="btn btn-contact">Contact</Link>
-      </nav>
+      <Header />
       <div className="Landing__title">
         <h1>Hi, I'm Bianca</h1>
         <h2>
@@ -22,6 +19,9 @@ export default function Landing() {
       </div>
       <div className="Landing__projects">
         <span>Check out some of my projects</span>
+        <Link to="/portfolio" className="btn btn-contact">
+          <FaSuitcase size={50} color="rgba(192, 57, 43, 1)"className="portfolio-icon"/>
+        </Link>
         <div className="teste1">
         <div className="teste">
           <a 
