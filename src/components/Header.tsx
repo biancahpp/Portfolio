@@ -5,38 +5,48 @@ export default function Header() {
   return (
     <div className="Header">
       <nav>
+        <div className="btn-wrapper">
         <a 
           href="https://www.linkedin.com/in/bianca-procopio" 
           target="_blank" 
           rel="noopener noreferrer" 
-          className="btn btn-linkedin">
-          <FaLinkedin size={50} color="rgba(192, 57, 43, 1)"className="linkedin-icon" />
-          <span>Linkedin</span>
+          className="btn-linkedin">
+          <FaLinkedin size={50} className="linkedin-icon" />
+          <div className="icon-description">
+            <p>Linkedin</p>
+            </div>
         </a>
+        </div>
+        <div className="btn-wrapper">
         <a 
           href="https://github.com/biancahpp" 
           target="_blank" 
           rel="noopener noreferrer" 
-          className="btn btn-github">
-          <FaGithub size={50} color="rgba(192, 57, 43, 1)"className="github-icon" />
-          <span>Github</span>
+          className="btn-github">
+          <FaGithub size={50} className="github-icon" />
+          <div className="icon-description">Github</div>
         </a>
+        </div>
+        <div className="btn-wrapper">
         <a 
-          href="https://github.com/biancahpp" 
+          href="https://drive.google.com/file/d/1Vh2rUU6an6wRac_9SAw9ROKoFeUa8BWa/view?usp=sharing" 
           target="_blank" 
           rel="noopener noreferrer" 
-          className="btn btn-resume">
-          <FaUser size={50} color="rgba(192, 57, 43, 1)"className="resume-icon" />
-          <span>Resume</span>
+          className="btn-resume">
+          <FaUser size={50} className="resume-icon" />
+          <div className="icon-description"> Resume</div>
         </a>
+        </div>
+        <div className="btn-wrapper">
         <a 
-          href="https://github.com/biancahpp" 
+          href="mailto:bianca_procopio@hotmail.com" 
           target="_blank" 
           rel="noopener noreferrer" 
-          className="btn btn-email">
-          <FaEnvelope size={50} color="rgba(192, 57, 43, 1)"className="email-icon" />
-          <span>Email</span>
+          className="btn-email">
+          <FaEnvelope size={50} className="email-icon" />
+          <div className="icon-description">Email</div>
         </a>
+        </div>
 
       </nav>
     </div>

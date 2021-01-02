@@ -6,18 +6,33 @@
     justify-content: flex-end;
     align-items: center;
     padding: 5rem;
-    a{
-      padding: 2rem;
-      span{
-        display: none;
-      }
-      &:hover{
-        color: $dark-pink;
-        transition: color 0.5s;
-        span{
-          display: inline-block;
+
+    .btn-wrapper{
+      width: 10%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      a{
+        .icon-description{
+          display: none;
+          width: 100%;
+        }
+        &:hover{
+          .icon-description{
+            display: block;
+            color: $dark-pink;
+           }
         }
       }
     }
   }
 }
+
+[class$="-icon"] {
+  color:$font-color;
+  transition: color .5s;
+  &:hover{
+    color: $dark-pink;
+  }
+} 
+
