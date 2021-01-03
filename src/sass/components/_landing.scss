@@ -1,60 +1,79 @@
 .Landing{
+
+  &-content{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+  }
+
   &__title{
-    position: absolute;
-    top: 20%;
-    left: 10%;
     h2{
+      padding-bottom: 3rem;
+    }
+  }
+
+  &-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .btn-portfolio{
+  
+      width: 25rem;
       display: flex;
+      flex-direction: column;
       align-items: center;
+  
+      border: 2px solid $dark-pink;
+      border-radius: 1rem;
+  
+      padding: 1rem;
+
+      .canada-icon{
+        color: $dark-pink;
+      }
+  
       span{
-        padding-right: 2rem;
+        font-size: 2rem;
+        margin-top: 1rem;
+      }
+      
+      transition: all .5s;
+
+      &:hover{
+
+        background-color: $dark-pink;
+        .canada-icon{
+          color: black;
+        }
+        color: black;
       }
     }
-    
-  }
-  &__projects{
-    height: 35rem;
-    width: 90rem;
 
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-    .teste1{
-      display: flex;
-    }
   }
+  
+
+  
 }
 
-.teste{
-  height: 50%;
-  width: 50%;
-  margin-top: 3rem;
-  padding: 2rem;
 
-  img{
-    height: 100%;
-    width: 100%;
+  // img{
+  //   height: 100%;
+  //   width: 100%;
 
-    border-radius: 10px;
-    transition: all .2s;
+  //   border-radius: 10px;
+  //   transition: all .2s;
 
-    &:hover{
-      box-shadow: 0 1rem 2rem rgba($shadow, .15);
-      transform: translateY(-2px);
-    }
+  //   &:hover{
+  //     box-shadow: 0 1rem 2rem rgba($shadow, .15);
+  //     transform: translateY(-2px);
+  //   }
 
-    &:active{
-      box-shadow: 0 .5rem 1rem rgba($shadow, .15);
-      transform: translateY(0);
-    }
-
-    }
-
-    
-
-  h3{
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 2rem;
-  }
-}
+  //   &:active{
+  //     box-shadow: 0 .5rem 1rem rgba($shadow, .15);
+  //     transform: translateY(0);
+  //   }
+  // }

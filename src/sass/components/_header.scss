@@ -1,15 +1,17 @@
 .Header{
+  height: 15vh;
   nav{
     width: 100vw;
-    height: 10vh;
+    height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 5rem;
+
+    padding-top: 3rem;
 
     .btn-wrapper{
       height: 100%;
-      width: 10%;
+      width: 10rem;
       display: flex;
       justify-content: center;
       text-align: center;
@@ -27,6 +29,17 @@
       }
     }
   }
+}
+
+.logo{
+  color: $font-color;
+  width: 15rem;
+  height: 15rem;
+
+  position: absolute;
+
+  top: 0;
+  left: 2rem;
 }
 
 [class$="-icon"] {

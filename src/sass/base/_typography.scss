@@ -1,23 +1,19 @@
 .Landing{
+  text-transform: uppercase;
+  letter-spacing: .4rem;
+
   h1{
-    font-size: 7rem;
+    font-size: 10.5rem;
+
   }
   h2{
-    font-size: 5rem;
-    font-style: italic;
+    font-size: 3rem;
   }
 
-  &__projects{
-    span{
-      font-size: 3rem;
-      font-weight: 700;
-    }
-    a{
-      text-decoration: none;
-    }
+  .btn-portfolio{
+    color: $dark-pink;
   }
 }
-
 .Header {
   nav{
     font-size: 2rem;
@@ -28,8 +24,4 @@
       color: $font-color;
     }
   }
-}
-
-.logo{
-  color: purple;
 }

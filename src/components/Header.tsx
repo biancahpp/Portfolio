@@ -5,11 +5,10 @@ import Logo from './Logo';
 export default function Header() {
   return (
     <div className="Header">
-      <div>
-        <Logo  className="logo"/>
-      </div>
       <nav>
+        <Logo  className="logo"/>
         <div className="btn-wrapper">
+          <div>
         <a 
           href="https://www.linkedin.com/in/bianca-procopio" 
           target="_blank" 
@@ -20,6 +19,7 @@ export default function Header() {
             <p>Linkedin</p>
             </div>
         </a>
+        </div>
         </div>
         <div className="btn-wrapper">
         <a 
