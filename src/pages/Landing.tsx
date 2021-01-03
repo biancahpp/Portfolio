@@ -1,8 +1,8 @@
 import React from 'react';
 import Dog from '../components/Dog';
 import { FaCanadianMapleLeaf, FaSuitcase } from 'react-icons/fa';
-import Todo from '../images/Todo.png';
-import IpTracker from '../images/IPtracker.jpg';
+// import Todo from '../images/Todo.png';
+// import IpTracker from '../images/IPtracker.jpg';
 import Header from '../components/Header';
 import { Link } from 'react-router-dom';
 
@@ -22,7 +22,7 @@ export default function Landing() {
         <Link to="/portfolio" className="btn btn-contact">
           <FaSuitcase size={50} color="rgba(192, 57, 43, 1)"className="portfolio-icon"/>
         </Link>
-        <div className="teste1">
+        {/* <div className="teste1">
         <div className="teste">
           <a 
           href="https://affectionate-khorana-2a1719.netlify.app/" 
@@ -43,7 +43,7 @@ export default function Landing() {
             <h3>Ip tracker</h3>
           </a>
         </div>
-        </div>
+        </div> */}
       </div>
       <Dog />
     </div>

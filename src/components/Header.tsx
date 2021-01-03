@@ -1,9 +1,13 @@
 import React from 'react'
 import { FaEnvelope, FaGithub, FaLinkedin, FaUser } from 'react-icons/fa';
+import Logo from './Logo';
 
 export default function Header() {
   return (
     <div className="Header">
+      <div>
+        <Logo  className="logo"/>
+      </div>
       <nav>
         <div className="btn-wrapper">
         <a 
