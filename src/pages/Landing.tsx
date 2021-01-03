@@ -2,6 +2,7 @@ import React from "react";
 import { FaCanadianMapleLeaf } from "react-icons/fa";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 export default function Landing() {
   return (
@@ -26,6 +27,7 @@ export default function Landing() {
           
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
