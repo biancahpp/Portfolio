@@ -33,6 +33,10 @@
   
       padding: 1rem;
 
+      transition: all .5s;
+      
+      animation: moveInBottom 1.5s;
+
       .canada-icon{
         color: $dark-pink;
       }
@@ -41,11 +45,8 @@
         font-size: 2rem;
         margin-top: 1rem;
       }
-      
-      transition: all .5s;
 
       &:hover{
-
         background-color: $dark-pink;
         .canada-icon{
           color: $black;
