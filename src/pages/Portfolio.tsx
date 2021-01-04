@@ -1,13 +1,30 @@
-import React from "react";
+/* eslint-disable react/jsx-no-comment-textnodes */
+import React, { useState } from "react";
+import Modal from "react-modal";
 import Logo from "../components/Logo";
 
 import Todo from "../images/Todo.png";
 import IpTracker from "../images/IPtracker.jpg";
 
 export default function Portfolio() {
+  const [ modal, setModal ] = useState(false);
+
   return (
     <div className="Portfolio">
       <Logo className="logo" />
+      <button onClick={() => setModal(true)}>Open Modal</button>
+      <Modal 
+      isOpen={modal} 
+      onRequestClose={() => setModal(false)}
+      className="project-modal"
+      overlayClassName="project-modal-overlay"
+      >
+        <div className="modal-content">
+        <h2>Modal title</h2>
+        <p>Modal Body</p>
+        <button onClick={() => setModal(false)}>Close Modal</button>
+        </div>
+      </Modal>
       <span className="Portfolio__title">Portfolio</span>
       <span className="Portfolio__description">
         /* These are some projects that I've been working on for the past few
