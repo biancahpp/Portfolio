@@ -13,7 +13,6 @@
   &__description{
     padding: 2rem;
   }
-
   .projects-container{
     display: flex;
     flex-wrap: wrap;
@@ -21,30 +20,30 @@
 
     width: 65%;
 
-    .project-image{
-      width: 50%;
-      text-align: center;
-      padding: 2rem;
-
-      img{
-        width: 100%;
-        border-radius: 10px;
-        transition: all .2s;
-
-        &:hover{
-          box-shadow: 0 1rem 2rem rgba($shadow, .15);
-          transform: translateY(-2px);
-        }
-  
-        &:active{
-          box-shadow: 0 .5rem 1rem rgba($shadow, .15);
-          transform: translateY(0);
-        }
-      }     
-    }
+    
   }
+}
 
-  
+.project-image{
+  width: 50%;
+  text-align: center;
+  padding: 2rem;
+
+  img{
+    width: 100%;
+    border-radius: 10px;
+    transition: all .2s;
+
+    &:hover{
+      box-shadow: 0 1rem 2rem rgba($shadow, .15);
+      transform: translateY(-2px);
+    }
+
+    &:active{
+      box-shadow: 0 .5rem 1rem rgba($shadow, .15);
+      transform: translateY(0);
+    }
+  }     
 }
 
 .project-modal{

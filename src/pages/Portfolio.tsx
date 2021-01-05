@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 import Logo from "../components/Logo";
 
-import Todo from "../images/Todo.png";
-import IpTracker from "../images/IPtracker.jpg";
+import IpTracker from "../components/IpTracker";
+import iptrack from "../images/IPtrack.jpg"
 
 export default function Portfolio() {
   const [ modal, setModal ] = useState(false);
@@ -17,8 +17,7 @@ export default function Portfolio() {
       isOpen={modal} 
       onRequestClose={() => setModal(false)}
       className="project-modal"
-      overlayClassName="project-modal-overlay"
-      >
+      overlayClassName="project-modal-overlay">
         <div className="modal-content">
         <h2>Modal title</h2>
         <p>Modal Body</p>
@@ -31,14 +30,15 @@ export default function Portfolio() {
         months */
       </span>
       <div className="projects-container">
+        <IpTracker />
         <div className="project-image">
           <a
-            href="https://affectionate-khorana-2a1719.netlify.app/"
+            href="https://eloquent-engelbart-326571.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="project-link--1"
           >
-            <img src={Todo} alt="Todo list"></img>
+            <img src={iptrack} alt="IP tracker"></img>
           </a>
         </div>
         <div className="project-image">
@@ -48,17 +48,7 @@ export default function Portfolio() {
             rel="noopener noreferrer"
             className="project-link--1"
           >
-            <img src={IpTracker} alt="IP tracker"></img>
-          </a>
-        </div>
-        <div className="project-image">
-          <a
-            href="https://eloquent-engelbart-326571.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="project-link--1"
-          >
-            <img src={IpTracker} alt="IP tracker"></img>
+            <img src={iptrack} alt="IP tracker"></img>
           </a>
         </div>
       </div>
