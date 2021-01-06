@@ -19,8 +19,6 @@
     justify-content: space-between;
 
     width: 65%;
-
-    
   }
 }
 
@@ -35,12 +33,13 @@
     transition: all .2s;
 
     &:hover{
-      box-shadow: 0 1rem 2rem rgba($shadow, .15);
+      box-shadow: 0 1rem 2rem rgba($shadow, .50);
       transform: translateY(-2px);
+      cursor: pointer;
     }
 
     &:active{
-      box-shadow: 0 .5rem 1rem rgba($shadow, .15);
+      box-shadow: 0 .5rem 1rem rgba($shadow, .50);
       transform: translateY(0);
     }
   }     

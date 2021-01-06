@@ -10,7 +10,10 @@
 
   display: flex;
 
-  .close-icon{
+  transition: all .5s;
+  animation: popUp 1s;
+  
+    .close-icon{
     height: 3rem;
     width: 3rem;
 
