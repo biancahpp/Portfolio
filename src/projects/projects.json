@@ -1,0 +1,45 @@
+[
+  {
+    "image": "https://i.imgur.com/sJNZZ8i.jpg",
+    "title":"Ip Tracker",
+    "tags": [
+      "react",
+      "javascript",
+      "HTML",
+      "SASS",
+      "API",
+      "Responsive"    
+    ],
+    "description":"With this responsive application the user can enter an IP address that he wants to know the information of. It was made using Geo Ipify API.",
+    "demoUrl":"https://eloquent-engelbart-326571.netlify.app/",
+    "codeUrl":"https://github.com/biancahpp/IP-tracker"
+  },
+  {
+    "image": "https://i.imgur.com/sJNZZ8i.jpg",
+    "title":"Todo",
+    "tags": [
+      "react",
+      "javascript",
+      "HTML",
+      "CSS",
+      "Responsive"    
+    ],
+    "description":"With this responsive application the user can can create a to-do list. Add a to-do to the list, mark/unmark the item as done, filter as all, completed, active and remove all of the completed items. The user can also toggle between light and dark mode",
+    "demoUrl":"https://affectionate-khorana-2a1719.netlify.app/",
+    "codeUrl":"https://github.com/biancahpp/todo"
+  },
+  {
+    "image": "https://i.imgur.com/sJNZZ8i.jpg",
+    "title":"Portfolio",
+    "tags": [
+      "react",
+      "typescript",
+      "HTML",
+      "SASS",
+      "Responsive"   
+    ],
+    "description":"This very own website that you are browsing right now. This project was a way of showcasing all of my work in the same place.",
+    "demoUrl":"#",
+    "codeUrl":"https://github.com/biancahpp/Portfolio"
+  }
+]

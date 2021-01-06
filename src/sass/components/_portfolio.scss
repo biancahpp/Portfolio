@@ -45,22 +45,3 @@
     }
   }     
 }
-
-.project-modal{
-  background-color: red;
-
-  width: 100rem;
-  height: 50rem;
-
-  font-size: 5rem;
-}
-
-.project-modal-overlay{
-  position: fixed;
-  inset: 0px;
-  background-color: rgba(255, 255, 255, 0.75);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}

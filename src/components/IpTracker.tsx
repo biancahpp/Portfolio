@@ -1,39 +1,68 @@
-import React, { useState } from 'react';
-import Todo from "../images/Todo.png";
+import React, { useState } from "react";
+import IPtrack from "../images/IPtrack.jpg";
 import Modal from "react-modal";
+import { FaTimes, FaEye, FaCode } from "react-icons/fa";
 
 export default function IpTracker() {
-  const [ todoModal, setTodoModal ] = useState(false);
+  const [todoModal, setTodoModal] = useState(false);
 
   return (
     <div className="IpTracker">
-
       <div className="project-image" onClick={() => setTodoModal(true)}>
-      <Modal 
-      isOpen={todoModal} 
-      onRequestClose={() => setTodoModal(false)}
-      className="project-modal"
-      overlayClassName="project-modal-overlay">
-        <div className="modal-content">
-        <h2>Modal title</h2>
-        <p>Modal Body</p>
-        <div 
-        onClick={() => {
-          setTodoModal(false)
-          console.log(todoModal);
-        }
-          }>VSF</div>
+      <img src={IPtrack} alt="IP tracker"></img>
+      </div>
+
+      <Modal
+        isOpen={todoModal}
+        onRequestClose={() => setTodoModal(false)}
+        className="project-modal"
+        overlayClassName="project-modal-overlay"
+      >
+        <FaTimes onClick={() => setTodoModal(false)} 
+        className="close-icon" />
+        <div className="modal-image">
+          <img src={IPtrack} alt="IP tracker"></img>
         </div>
-      </Modal>
-          {/* <a
-            href="https://affectionate-khorana-2a1719.netlify.app/"
+        <div className="modal-content">
+          <h1>IP Tracker</h1>
+          <div className="modal-technologies">
+            <span>React</span>
+            <span>Javascript</span>
+            <span>HTML</span>
+            <span>SASS</span>
+            <span>API</span>
+            <span>Responsive</span>
+          </div>
+          <h3>About</h3>
+          <p>
+            With this responsive application the user can enter an IP address
+            that he wants to know the information of. It was made using Geo
+            Ipify API.
+          </p>
+          <div className="btn-link-wrapper">
+          <a
+            href="https://eloquent-engelbart-326571.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="project-link--1"
-          > */}
-            <img src={Todo} alt="Todo list"></img>
-          {/* </a> */}
+            className="project-link"
+          >
+            <FaEye className="eye-icon"/>
+            <span>Demo</span>
+          </a>
+          <a
+            href="https://github.com/biancahpp/IP-tracker"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            <FaCode className="code-icon"/>
+            <span>Code</span>
+          </a>
+          </div>
+
+          
         </div>
+      </Modal>
     </div>
-  )
+  );
 }
