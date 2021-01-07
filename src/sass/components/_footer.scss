@@ -12,16 +12,14 @@
   align-items: center;
 }
 
-// .Footer{
-//   height: 8vh;
-//   width: 100vw;
+@media (min-width: 768px) and (max-width: 1024px){
+ .Footer{
+  font-size: 2rem;
+}
+}
 
-//   font-size: 1.5rem;
-
-//   position: absolute;
-//   bottom: 0;
-
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
+@media (min-width: 1281px){
+  .Footer{
+    font-size: 1.5rem;
+  }
+}
