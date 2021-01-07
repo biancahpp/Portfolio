@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <div className="Header">
       <nav>
-        <Logo  className="logo"/>
+        <Logo  className="logo-header"/>
         <div className="btn-wrapper">
           <div>
         <a 
@@ -14,7 +14,7 @@ export default function Header() {
           target="_blank" 
           rel="noopener noreferrer" 
           className="btn-linkedin">
-          <FaLinkedin size={50} className="linkedin-icon" />
+          <FaLinkedin className="linkedin-icon" />
           <div className="icon-description">
             <p>Linkedin</p>
             </div>
@@ -27,7 +27,7 @@ export default function Header() {
           target="_blank" 
           rel="noopener noreferrer" 
           className="btn-github">
-          <FaGithub size={50} className="github-icon" />
+          <FaGithub className="github-icon" />
           <div className="icon-description">Github</div>
         </a>
         </div>
@@ -37,7 +37,7 @@ export default function Header() {
           target="_blank" 
           rel="noopener noreferrer" 
           className="btn-resume">
-          <FaUser size={50} className="resume-icon" />
+          <FaUser className="resume-icon" />
           <div className="icon-description"> Resume</div>
         </a>
         </div>
@@ -47,7 +47,7 @@ export default function Header() {
           target="_blank" 
           rel="noopener noreferrer" 
           className="btn-email">
-          <FaEnvelope size={50} className="email-icon" />
+          <FaEnvelope className="email-icon" />
           <div className="icon-description">Email</div>
         </a>
         </div>

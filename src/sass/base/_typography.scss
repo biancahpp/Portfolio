@@ -3,11 +3,12 @@
   letter-spacing: .4rem;
 
   h1{
-    font-size: 10.5rem;
+    font-size: 5rem;
 
   }
   h2{
-    font-size: 3rem;
+    font-size: 2rem;
+    font-weight: 100;
   }
 
   .btn-portfolio{
@@ -21,7 +22,10 @@
     font-weight: 500;
     a{
       text-decoration: none;
-      color: $font-color;
+      color: $dark-pink;
+      .icon-description{
+        font-size: 1.3rem;
+      }
     }
   }
 }
@@ -75,3 +79,81 @@
     }
   }
 }
+
+// .Landing{
+//   text-transform: uppercase;
+//   letter-spacing: .4rem;
+
+//   h1{
+//     font-size: 10.5rem;
+
+//   }
+//   h2{
+//     font-size: 3rem;
+//   }
+
+//   .btn-portfolio{
+//     color: $dark-pink;
+//   }
+// }
+// .Header {
+//   nav{
+//     font-size: 2rem;
+//     text-transform: uppercase;
+//     font-weight: 500;
+//     a{
+//       text-decoration: none;
+//       color: $font-color;
+//     }
+//   }
+// }
+
+// .Portfolio{
+//   &__title{
+//     font-size: 3.5rem;
+//     color: $dark-pink;
+
+//   }
+//   &__description{
+//     font-size: 1.5rem;
+//     color: #94a4b4;
+//     font-style: italic;
+//     font-weight: 100;
+//     font-family: Inconsolata,sans-serif
+//   }
+// }
+
+// .project-modal{
+//   color: $dark-pink;
+//   .modal-content{
+//     h1{
+//       font-size: 3rem;
+//       letter-spacing: .5rem;
+//       font-weight: 100;
+//     }
+//     .modal-technologies{
+//       span{
+//         font-size: 1.5rem;
+//         color: $font-color;
+//       }
+//     }
+//     h3{
+//       font-size: 2rem;
+//       letter-spacing: .3rem;
+//       font-weight: 100;
+//     }
+//     p{
+//       font-size: 1.5rem;
+//       color: $font-color;
+//       font-weight: 100;
+//       font-family: Inconsolata,sans-serif;
+//       letter-spacing: .2rem;
+//       text-align: justify;
+//     }
+//     a{
+//       font-size: 1.5rem;
+//       text-decoration: none;
+//       color: $dark-pink;
+//     }
+//   }
+// }

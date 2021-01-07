@@ -11,6 +11,7 @@ export default function Portfolio() {
   return (
     <div className="Portfolio">
       <Logo className="logo" />
+      <div className="Wrapper">
       <span className="Portfolio__title">Portfolio</span>
       <span className="Portfolio__description">
         /* These are some projects that I've been working on for the past few
@@ -63,6 +64,7 @@ export default function Portfolio() {
               </div>
             </Modal></>
         ))}
+        </div>
       </div>
     </div>
   );
