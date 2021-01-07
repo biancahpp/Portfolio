@@ -5,8 +5,11 @@ import Logo from './Logo';
 export default function Header() {
   return (
     <div className="Header">
+      <div className="logo-wrapper">
+      <Logo  className="logo-header"/>
+      </div>
+      
       <nav>
-        <Logo  className="logo-header"/>
         <div className="btn-wrapper">
           <div>
         <a 

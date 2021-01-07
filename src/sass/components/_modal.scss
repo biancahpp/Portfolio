@@ -110,102 +110,29 @@
   justify-content: center;
 }
 
-// @media (min-width: 1281px){
-//   .project-modal{
-//     width:55%;
-//     height: 55%;
+
+
+@media (min-width: 1281px){
+  .project-modal{
+    width:55%;
+    height: 55%;
   
-//     box-shadow: 0 1rem 2rem rgba($black, .15);
+    display: flex;
   
-//     font-size: 5rem;
+    .modal-image{
+      width: 60%;
+      height: 100%;
+    }
   
-//     position: relative;
-  
-//     display: flex;
-  
-//     transition: all .5s;
-//     animation: popUp 1s;
-    
-//       .close-icon{
-//       height: 3rem;
-//       width: 3rem;
-  
-//       position: absolute;
-//       right: 2rem;
-//       top: 2rem;
-  
-//       color: $dark-pink;
-  
-//       &:hover{
-//         cursor: pointer;
-//         color: lighten($dark-pink, 20%);
-//       }
-//     }
-  
-//     .modal-image{
-//       width: 60%;
-//       height: 100%;
-//       img{
-//         width: 100%;
-//         height: 100%;
-//         object-fit: cover;
-  
-//         border-radius: 10px 0 0 10px;
-//       }
-//     }
-  
-//     .modal-content{
-//       border-radius: 0 10px 10px 0;
-//       background-color: $modal-background;
-  
-//       width: 40%;
-//       padding: 2rem;
-      
-//       .modal-technologies{
-//         display: flex;
-//         flex-wrap: wrap;
-//         span{
-//           background-color: $dark-pink;
-//           padding: .5rem 1rem;
-//           border-radius: 10rem;
-//           margin-right: 2rem;
-//           margin-top: 1rem;
-//         }
-//       }
-//       h3{
-//         margin: 2rem 0;
-//       }
-//       .btn-link-wrapper{
-//         a{
-//           border: 2px solid $dark-pink;
-//           padding: .8rem;
-//           border-radius: 1rem;
-    
-//           margin-right: 2rem;
-  
-//           transition: all .5s;    
-//           span{
-//             padding: .5rem;
-//           }
-//           .eye-icon{
-//             color: $dark-pink;
-//           }
-//           .code-icon{
-//             color: $dark-pink;
-//           }
-//           &:hover{
-//             background-color: $dark-pink;
-//             .eye-icon{
-//               color: $black;
-//             }
-//             .code-icon{
-//               color: $black;
-//             }
-//             color: $black;
-//           }
-//         }
-//       }
-  
-//     }
-//   }
-// }
+    .modal-content{
+      width: 40%;
+      height: 100%;
+
+      .btn-link-wrapper{
+        a{
+          padding: .8rem; 
+        }
+      }
+    }
+  }
+}

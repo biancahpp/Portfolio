@@ -27,7 +27,6 @@
     }
   }
 }
-
 .logo-header{
   color: $font-color;
   width: 10rem;
@@ -50,69 +49,116 @@
   }
 } 
 
-// [class$="-icon"] {
-//   color:$font-color;
-//   transition: color .5s;
-//   height: 5rem;
-//   width: 5rem;
-//   &:hover{
-//     color: $dark-pink;
-//   }
-// } 
 
 
-// .logo{
-//   color: $dark-pink;
-//   width: 15rem;
-//   height: 15rem;
 
-//   position: absolute;
 
-//   top: 0;
-//   left: 2rem;
-// }
+@media (min-width: 768px) and (max-width: 1024px){
+  
+  .Header{
+    height: 15vh;
+    nav{
+      height: 100%;
 
-// .Header{
-//   height: 15vh;
-//   nav{
-//     width: 100vw;
-//     height: 100%;
-//     display: flex;
-//     justify-content: flex-end;
-//     align-items: center;
+      justify-content: flex-end;
+      align-items: center;
 
-//     padding-top: 3rem;
+      padding-top: 3rem;
 
-//     .btn-wrapper{
-//       height: 100%;
-//       width: 10rem;
-//       display: flex;
-//       justify-content: center;
-//       text-align: center;
-//       a{
-//         .icon-description{
-//           display: none;
-//           width: 100%;
-//         }
-//         &:hover{
-//           .icon-description{
-//             display: block;
-//             color: $dark-pink;
-//            }
-//         }
-//       }
-//     }
-//   }
-// }
+      .btn-wrapper{
+        a{
+          .icon-description{
+            display: none;
+            width: 100%;
+          }
+          &:hover{
+            .icon-description{
+              display: block;
+              color: $dark-pink;
+            }
+          }
+        }
+      }
+    }
+  }
+  .logo-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    .logo-header{
+      color: $dark-pink;
+      width: 15rem;
+      height: 15rem;
+      transform: translateX(50%);
+    }
 
-// .logo-header{
-//   color: $dark-pink;
-//   width: 10rem;
-//   height: 10rem;
+  }
+  
 
-//   position: absolute;
+  [class$="-icon"] {
+    color:$font-color;
+    transition: color .5s;
+    height: 5rem;
+    width: 5rem;
+    &:hover{
+      color: $dark-pink;
+    }
+  } 
 
-//   top: 0;
-//   left: 50%;
-//   transform: translateX(-50%);
-// }
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 1281px){
+  .logo-header{
+    color: $dark-pink;
+    width: 15rem;
+    height: 15rem;
+  }
+  .Header{
+    height: 15vh;
+    nav{
+      height: 100%;
+
+      justify-content: flex-end;
+      align-items: center;
+
+      padding-top: 3rem;
+
+      .btn-wrapper{
+        a{
+          .icon-description{
+            display: none;
+            width: 100%;
+          }
+          &:hover{
+            .icon-description{
+              display: block;
+              color: $dark-pink;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  [class$="-icon"] {
+    color:$font-color;
+    transition: color .5s;
+    height: 5rem;
+    width: 5rem;
+    &:hover{
+      color: $dark-pink;
+    }
+  } 
+
+}
+
+
+
