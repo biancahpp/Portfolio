@@ -1,6 +1,6 @@
 .project-modal{
   width:80%;
-  height: 80%;
+  min-height:80%;
 
   box-shadow: 0 1rem 2rem rgba($black, .15);
 
@@ -10,6 +10,8 @@
 
   transition: all .5s;
   animation: popUp 1s;
+
+  overflow: scroll;
   
     .close-icon{
     height: 3rem;
@@ -44,8 +46,12 @@
     background-color: $modal-background;
 
     width: 100%;
-    height: 70%;
+    min-height: 70%;
     padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
     .modal-technologies{
       display: flex;
@@ -63,38 +69,40 @@
     }
     .btn-link-wrapper{
       display: flex;
-      a{
-        border: 2px solid $dark-pink;
-        padding: .5rem;
-        border-radius: 1rem;
-        width: 40%;
-  
-        margin: 2rem 2rem;
-
-        transition: all .5s; 
-        
-        display: flex;
-        justify-content: center;
-        span{
+      
+        a{
+          border: 2px solid $dark-pink;
           padding: .5rem;
-        }
-        .eye-icon{
-          color: $dark-pink;
-        }
-        .code-icon{
-          color: $dark-pink;
-        }
-        &:hover{
-          background-color: $dark-pink;
+          border-radius: 1rem;
+          width: 40%;
+    
+          margin: 2rem 2rem;
+
+          transition: all .5s; 
+          
+          display: flex;
+          justify-content: center;
+          
+          span{
+            padding: .5rem;
+          }
           .eye-icon{
-            color: $black;
+            color: $dark-pink;
           }
           .code-icon{
+            color: $dark-pink;
+          }
+          &:hover{
+            background-color: $dark-pink;
+            .eye-icon{
+              color: $black;
+            }
+            .code-icon{
+              color: $black;
+            }
             color: $black;
           }
-          color: $black;
         }
-      }
     }
 
   }
@@ -106,7 +114,6 @@
   background-color: $overlay-background;
 
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -134,5 +141,9 @@
         }
       }
     }
+  }
+
+  .project-modal-overlay{
+    align-items: center ;
   }
 }

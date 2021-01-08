@@ -33,6 +33,7 @@
   width: 100%;
   text-align: center;
   padding: 2rem;
+  cursor: pointer;
 
   img{
     width: 100%;
@@ -43,7 +44,6 @@
     &:hover{
       box-shadow: 0 1rem 2rem rgba($shadow, .50);
       transform: translateY(-2px);
-      cursor: pointer;
     }
 
     &:active{

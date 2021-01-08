@@ -20,8 +20,14 @@
       color: $dark-pink;
       a{
         .icon-description{
-          display: block;
+          display: none;
           width: 100%;
+        }
+        &:hover{
+          .icon-description{
+            display: block;
+            color: $dark-pink;
+          }
         }
       }
     }

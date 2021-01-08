@@ -4,6 +4,7 @@ import Logo from "../components/Logo";
 import projects from "../projects/projects.json";
 import Modal from "react-modal";
 import { FaTimes, FaEye, FaCode } from "react-icons/fa";
+import { v4 as uuidv4 } from 'uuid';
 
 export default function Portfolio() {
   const [selectedModal, setSelectedModal] = useState(-1);
@@ -19,7 +20,8 @@ export default function Portfolio() {
       </span>
       <div className="projects-container">
         {projects.map((item, index) => (
-          <><div className="project-image" onClick={() => setSelectedModal(index)}>
+          <React.Fragment key={uuidv4()}>
+            <div className="project-image" onClick={() => setSelectedModal(index)} key={uuidv4()}>
             <img src={item.image} alt="project preview"></img>
           </div>
             <Modal
@@ -37,7 +39,7 @@ export default function Portfolio() {
               <div className="modal-content">
                 <h1>{item.title}</h1>
                 <div className="modal-technologies">
-                  {item.tags.map(it => <span>{it}</span>)}
+                  {item.tags.map(it => <span key={uuidv4()}>{it}</span>)}
                 </div>
                 <h3>About</h3>
                 <p>{item.description}</p>
@@ -62,7 +64,7 @@ export default function Portfolio() {
                   </a>
                 </div>
               </div>
-            </Modal></>
+            </Modal></React.Fragment>
         ))}
         </div>
       </div>
