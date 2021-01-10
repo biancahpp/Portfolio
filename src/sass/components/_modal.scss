@@ -1,8 +1,8 @@
 .project-modal{
-  width:80%;
-  min-height:80%;
 
-  box-shadow: 0 1rem 2rem rgba($black, .15);
+  margin-top: 2rem;
+  width:80%;
+  min-height:70%;
 
   font-size: 5rem;
 
@@ -46,7 +46,7 @@
     background-color: $modal-background;
 
     width: 100%;
-    min-height: 70%;
+    min-height: 50%;
     padding: 2rem;
 
     display: flex;
@@ -110,6 +110,8 @@
 
 .project-modal-overlay{
   position: fixed;
+  top: 0;
+  right: 0;
   inset: 0px;
   background-color: $overlay-background;
 
@@ -117,27 +119,123 @@
   justify-content: center;
 }
 
+@media (min-width: 768px) and (max-width: 1024px){
+  .project-modal{
+    margin-top: 3rem;
 
+    .modal-content{
+      justify-content: center;
 
-@media (min-width: 1281px){
+      h1{
+        margin-bottom: 3rem;
+      }
+      .modal-technologies{
+        span{
+          margin-bottom:  1.5rem;
+        }
+      }
+      h3{
+        margin: 2rem 0;
+      }
+      p{
+        margin: 2rem 0;
+      }
+
+      .btn-link-wrapper{
+        display: flex;
+        
+          a{
+            border: 2px solid $dark-pink;
+            padding: .5rem;
+            border-radius: 1rem;
+            width: 30%;
+      
+            margin: 2rem 2rem;
+  
+            transition: all .5s; 
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            span{
+              padding: 1rem;
+            }
+            .eye-icon{
+              color: $dark-pink;
+            }
+            .code-icon{
+              color: $dark-pink;
+            }
+            &:hover{
+              background-color: $dark-pink;
+              .eye-icon{
+                color: $black;
+              }
+              .code-icon{
+                color: $black;
+              }
+              color: $black;
+            }
+          }
+      }
+  
+    }
+  }
+}
+
+@media (min-width: 1025px){
   .project-modal{
     width:55%;
     height: 55%;
+
+    overflow: hidden;
   
     display: flex;
   
     .modal-image{
       width: 60%;
       height: 100%;
+      img{
+        border-radius: 10px 0 0 10px;
+      }
     }
-  
+    
     .modal-content{
       width: 40%;
       height: 100%;
+      justify-content: center;
+      border-radius: 0 10px 10px 0;
+
+      h1{
+        margin-bottom: 3rem;
+      }
+
+      .modal-technologies{
+        span{
+          margin-bottom:  1.5rem;
+        }
+      }
+      h3{
+        margin: 2rem 0;
+      }
+      p{
+        margin: 2rem 0;
+      }
 
       .btn-link-wrapper{
         a{
-          padding: .8rem; 
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .eye-icon{
+            width: 3.5rem;
+            height: 3.5rem;
+          }
+          .code-icon{
+            width: 3.5rem;
+            height: 3.5rem;
+          }
         }
       }
     }

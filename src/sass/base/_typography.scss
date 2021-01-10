@@ -100,11 +100,31 @@
     }
   
     .project-modal{
-      color: $dark-pink;
+      .modal-content{
+        h1{
+          font-size: 5rem;
+        }
+        .modal-technologies{
+          span{
+            font-size:  2.5rem;
+          }
+        }
+        h3{
+          font-size: 3rem;
+        }
+        p{
+          font-size: 2rem;
+        }
+        .project-link{
+          span{
+            font-size: 2.5rem;
+          }
+        }      
+      }
     }
 }
 
-@media (min-width: 1281px){
+@media (min-width: 1025px){
   .Landing{
 
   h1{
