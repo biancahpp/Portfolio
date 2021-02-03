@@ -13,7 +13,7 @@ export default function Landing() {
           <div className="Landing__title">
             <h1>Hi, I'm Bianca</h1>
             <h2>
-              <span>A front-end developer located in Canada</span>
+              <span>A full-stack developer located in Canada</span>
             </h2>
           </div>
           
