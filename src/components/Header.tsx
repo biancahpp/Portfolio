@@ -36,7 +36,7 @@ export default function Header() {
         </div>
         <div className="btn-wrapper">
         <a 
-          href="https://drive.google.com/file/d/1sAK49_fPv4uMFPaJ6nz5qH9GUaFWoSzB/view?usp=sharing" 
+          href="https://drive.google.com/file/d/1PhMu5BobevG26f59NQanRt1CxQK2B7Iv/view?usp=sharing" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="btn-resume">

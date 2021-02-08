@@ -1,5 +1,24 @@
 [
   {
+    "image": "https://i.imgur.com/1BasC22.jpg",
+    "title":"Jobs",
+    "tags": [
+      "react",
+      "typescript",
+      "HTML",
+      "SASS",
+      "API",
+      "Redux",
+      "Fullstack",
+      "MongoDB",
+      "NodeJS",
+      "Responsive"    
+    ],
+    "description":"Fully responsive, full-stack application that allows you to add jobs, see all available jobs, filter and delete jobs",
+    "demoUrl":"https://youthful-spence-b0dbe0.netlify.app",
+    "codeUrl":"https://github.com/biancahpp/JobClient"
+  },
+  {
     "image": "https://i.imgur.com/sJNZZ8i.jpg",
     "title":"Ip Tracker",
     "tags": [
