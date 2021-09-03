@@ -1,11 +1,7 @@
 .Portfolio{
-
   min-height: 100vh;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  max-width: 100vw;
+  @include flex-column;
 
   &__title{
     padding: 2rem;
@@ -13,47 +9,40 @@
   &__description{
     padding: 2rem;
   }
-  .projects-container{
-
-    width: 90%;
-  }
   .Wrapper{
-  
-    position: absolute;
-    top: 20%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex-column;
+    min-width: 65%;
+    .projects-container{
+      min-width: 100%;
+    }
+    .project-image{
+      max-width: 48%;
+      height: 30vh;
+    
+      border-radius: 10px;
+      box-shadow: 0 1rem 2rem rgba($shadow, .10);
+    
+      text-align: center;
+      margin: 1rem 1rem;
+    
+      cursor: pointer;
+    
+      transition: all .2s;
+    
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: left top;
+    
+      &:hover{
+        box-shadow: 0 1rem 2rem rgba($shadow, .50);
+        transform: translateY(-2px);
+      }
+      &:active{
+        box-shadow: 0 .5rem 1rem rgba($shadow, .50);
+        transform: translateY(0);
+      }   
+    }
   }
-}
-
-.project-image{
-  width: 100%;
-  text-align: center;
-  padding: 2rem;
-  cursor: pointer;
-
-  img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    transition: all .2s;
-    box-shadow: 0 1rem 2rem rgba($shadow, .10);
-
-    cursor: pointer;
-
-    &:hover{
-      box-shadow: 0 1rem 2rem rgba($shadow, .50);
-      transform: translateY(-2px);
-    }
-
-    &:active{
-      box-shadow: 0 .5rem 1rem rgba($shadow, .50);
-      transform: translateY(0);
-    }
-  }     
 }
 
 .logo{

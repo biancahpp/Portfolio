@@ -32,13 +32,10 @@
   .modal-image{
     width: 100%;
     height: 30%;
-    img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      border-radius: 10px 10px 0 0;
-    }
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+    border-radius: 10px 0 0 10px;
   }
 
   .modal-content{
@@ -52,7 +49,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+
     .modal-technologies{
       display: flex;
       flex-wrap: wrap;
@@ -154,9 +151,7 @@
   
             transition: all .5s; 
             
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-row;
             
             span{
               padding: 1rem;
@@ -225,9 +220,7 @@
 
       .btn-link-wrapper{
         a{
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          @include flex-row;
           .eye-icon{
             width: 3.5rem;
             height: 3.5rem;

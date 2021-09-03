@@ -1,9 +1,7 @@
 .Header{
   height: 22vh;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex-column;
   justify-content: flex-end;
 
   nav{
@@ -13,9 +11,7 @@
     .btn-wrapper{
       height: 100%;
       width: 10rem;
-      display: flex;
-      justify-content: center;
-      text-align: center;
+      @include flex-row;
 
       color: $dark-pink;
       a{
