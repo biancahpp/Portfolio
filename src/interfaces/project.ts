@@ -3,6 +3,6 @@ export interface ProjectI {
   title: string,
   tags: string[],
   description: string
-  demoUrl: string
+  demoUrl?: string
   codeUrl: string
 }

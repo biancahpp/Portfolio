@@ -1,10 +1,72 @@
 import jobs from '../resources/jobs.png';
 import countries from '../resources/countries.png';
+import tutorWorld from '../resources/tutor_world.png';
 import toDo from '../resources/to_do.png';
 import ipTracker from '../resources/ip_tracker.png';
+import practiseInvestor from '../resources/practise_investor.png';
+import haby from '../resources/haby.png';
 import { ProjectI } from '../interfaces/project';
 
 export const projects: ProjectI[] = [
+  {
+    image: tutorWorld,
+    title: "Tutor World",
+    tags: [
+      "React",
+      "Typescript",
+      "SASS",
+      "Redux",
+      "Fullstack",
+      "Postgres",
+      "NodeJS",
+      "Express",
+      "Sequelize",
+      "AWS RDS",
+      "Stripe",
+      "Socket io"
+    ],
+    description: "Tutor World aim is to offer you the best platform to be able to learn from top-rated tutors. Not only are we able to host in-app online tutoring sessions, but you can also find tutors that are available at your local libraries.",
+    demoUrl: "",
+    codeUrl: "https://github.com/biancahpp/tutorworld"
+  },
+  {
+    image: practiseInvestor,
+    title: "Practise Investor",
+    tags: [
+      "React",
+      "Typescript",
+      "Material UI",
+      "Redux",
+      "Fullstack",
+      "MongoDB",
+      "NodeJS",
+      "Express",
+      "Mongoose",
+    ],
+    description: "Practise Investor allows users to buy and sell stock with real-time stock market prices with fake money. It allows users to practise investing with zero risk, has features such as porfolio diversity metrics, stock holdings metrics, top news in the stock market, and an application ranking feature to add gamification.",
+    demoUrl: "",
+    codeUrl: "https://github.com/biancahpp/PractiseInvestor"
+  },
+  {
+    image: haby,
+    title: "Haby",
+    tags: [
+      "React",
+      "Typescript",
+      "SASS",
+      "React Context",
+      "Fullstack",
+      "Postgresql",
+      "NodeJS",
+      "Express",
+      "Sequelize",
+      "AWS RDS",
+      
+    ],
+    description: "Haby is a habit tracker that helps you maintain your habits and thoughts.",
+    demoUrl: "https://haby.netlify.app/",
+    codeUrl: "https://github.com/biancahpp/haby"
+  },
   {
     image: jobs,
     title: "Jobs",

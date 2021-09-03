@@ -43,7 +43,7 @@ export default function Portfolio() {
                 <h3>About</h3>
                 <p>{project.description}</p>
                 <div className="btn-link-wrapper">
-                  <a
+                  {project.demoUrl !== "" && <a
                     href={project.demoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -51,7 +51,7 @@ export default function Portfolio() {
                   >
                     <FaEye className="eye-icon" />
                     <span>Demo</span>
-                  </a>
+                  </a>}
                   <a
                     href={project.codeUrl}
                     target="_blank"
