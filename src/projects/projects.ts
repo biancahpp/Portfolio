@@ -61,7 +61,7 @@ export const projects: ProjectI[] = [
       "Express",
       "Sequelize",
       "AWS RDS",
-      
+      "Responsive"
     ],
     description: "Haby is a habit tracker that helps you maintain your habits and thoughts.",
     demoUrl: "https://haby.netlify.app/",
@@ -102,20 +102,6 @@ export const projects: ProjectI[] = [
     codeUrl: "https://github.com/biancahpp/IP-tracker"
   },
   {
-    image: toDo,
-    title: "Todo",
-    tags: [
-      "react",
-      "javascript",
-      "HTML",
-      "CSS",
-      "Responsive"    
-    ],
-    description: "With this responsive application the user can create a to-do list. Add a to-do to the list, mark/unmark the item as done, filter as all, completed, active and remove all of the completed items. The user can also toggle between light and dark mode",
-    demoUrl: "https://affectionate-khorana-2a1719.netlify.app/",
-    codeUrl: "https://github.com/biancahpp/todo"
-  },
-  {
     image: countries,
     title: "Countries",
     tags: [
@@ -129,5 +115,19 @@ export const projects: ProjectI[] = [
     description: "With this responsive application the user can search for specific countries by filtering by name or by region. The user can also toggle between light and dark mode",
     demoUrl: "https://cranky-neumann-408af6.netlify.app/",
     codeUrl: "https://github.com/biancahpp/countriess"
+  },
+  {
+    image: toDo,
+    title: "Todo",
+    tags: [
+      "react",
+      "javascript",
+      "HTML",
+      "CSS",
+      "Responsive"    
+    ],
+    description: "With this responsive application the user can create a to-do list. Add a to-do to the list, mark/unmark the item as done, filter as all, completed, active and remove all of the completed items. The user can also toggle between light and dark mode",
+    demoUrl: "https://affectionate-khorana-2a1719.netlify.app/",
+    codeUrl: "https://github.com/biancahpp/todo"
   }
 ]

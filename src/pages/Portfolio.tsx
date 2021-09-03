@@ -21,8 +21,7 @@ export default function Portfolio() {
       <div className="projects-container">
         {projects.map((project, index) => (
           <React.Fragment key={uuidv4()}>
-            <div className="project-image" onClick={() => setSelectedModal(index)} key={uuidv4()}>
-              <img src={project.image} alt="project preview"></img>
+            <div className="project-image" onClick={() => setSelectedModal(index)} key={uuidv4()} style={{backgroundImage: `url(${project.image})`}}>
             </div>
             <Modal
               isOpen={index === selectedModal}
