@@ -19,16 +19,12 @@
   }
 
   &-text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column;
 
     .btn-portfolio{
   
       width: 25rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include flex-column;
   
       border: 2px solid $dark-pink;
       border-radius: 1rem;
