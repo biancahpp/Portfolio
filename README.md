@@ -14,7 +14,7 @@ npm install
 
 npm start
 
-If you want to add projects of your own you can use the file projects.json and add the info of your projects there.
+If you want to add projects of your own you can use the file projects.ts and add the info of your projects there.
 
 ## Links ##
 
